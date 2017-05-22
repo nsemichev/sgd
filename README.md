@@ -50,22 +50,22 @@ docker run -it --rm -v ~/projects/sgd/:/projects/sgd -p 8888:8888 jupyter/scipy-
 
 ```
 6. 
-	The error doesn’t decrease monotonously with iterations,
-	it oscillates around the optimal value for error.
-	There is a stochastic behavior, since during iterations
-	only part of the set is used to compute the next gradient step. 
+    The error doesn’t decrease monotonously with iterations,
+    it oscillates around the optimal value for error.
+    There is a stochastic behavior, since during iterations
+    only part of the set is used to compute the next gradient step. 
 
 7.
-	Might not always converge and not have the most optimal solution. 
-	During each iteration, SGD relies on the changes of each gradient 
-	descent step and distributing the calcutations of the gradients 
-	may not be optimal in this situation.
+    Might not always converge and not have the most optimal solution. 
+    During each iteration, SGD relies on the changes of each gradient 
+    descent step and distributing the calcutations of the gradients  
+    may not be optimal in this situation.
 8. 
-	Using regular gradient descent can be an alternative to SGD. 
-	The benefits of using gradient descent is that it is possible
-	to distribute the data, compute all the gradients, and combine the results 
-	together to perform the next gradient descent step. 
-	Since SGD uses only part of the data to compute the next gradient step,
-	it is less efficient to distribute the data for SGD. 
-	However, regular gradient descent will converge slower than SGD. 
+    Using regular gradient descent can be an alternative to SGD. 
+    The benefits of using gradient descent is that it is possible
+    to distribute the data, compute all the gradients, and combine the results 
+    together to perform the next gradient descent step. 
+    Since SGD uses only part of the data to compute the next gradient step,
+    it is less efficient to distribute the data for SGD. 
+    However, regular gradient descent will converge slower than SGD. 
 ```
