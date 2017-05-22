@@ -15,7 +15,7 @@ docker run -it --rm -v ~/projects/sgd/:/projects/sgd -p 8888:8888 jupyter/scipy-
 
 ```
 1.
-	Step-size - How large the weights will change after computing the gradient.
+    Step-size - How large the weights will change after computing the gradient.
     Number of iterations - How many iterations gradient descent will go through.
     Batch Fraction - Used to determine how many data points to use for each gradient step.
 
