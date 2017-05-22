@@ -20,8 +20,8 @@ docker run -it --rm -v ~/projects/sgd/:/projects/sgd -p 8888:8888 jupyter/scipy-
     Batch Fraction - Used to determine how many data points to use for each gradient step.
 
 2. 
-	Step-size should be relatively small in order to ensure 
-	that gradient descent doesn’t diverge. 
+    Step-size should be relatively small in order to ensure 
+    that gradient descent doesn’t diverge. 
     
     Number of iterations is a trade-off between finding a more optimal solution
     on the training set and the time to complete all iterations. 
